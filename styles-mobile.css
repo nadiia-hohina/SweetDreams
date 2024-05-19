@@ -1,0 +1,427 @@
+@media screen and (orientation: portrait) {
+    .header {
+        height: 100px;
+        padding: 25px 15px 0;
+        z-index: 300;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header .title {
+        font-weight: 500;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .content {
+        padding: 0;
+        margin-top: 100px;
+        height: calc(100vh - 100px);
+        overflow-x: hidden;
+    }
+
+    .product-wrapper .product {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .product-wrapper {
+        margin-top: 20px;
+    }
+
+    .product-wrapper .title {
+        width: 200px;
+        justify-content: center;
+    }
+
+    .product-wrapper img {
+        height: 200px;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-info .details {
+        font-size: 14px;
+        padding: 15px 20px 25px;
+        position: relative;
+    }
+
+    .product-info .details:after {
+        content: '';
+        width: calc(100% - 40px);
+        height: 1px;
+        bottom: 4px;
+        position: absolute;
+        background: #CBBDC7;
+    }
+
+
+    .product-info .details .detail-name {
+        font-size: 14px;
+    }
+
+    .product-info .details .detail {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
+
+    .product .description {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .product .product-info {
+        row-gap: 0;
+    }
+
+    .table-top-divider {
+        display: none;
+    }
+
+    .product-wrapper .table {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .table .divider {
+        width: 100%;
+        background: #E1C9DB70;
+        margin: 0;
+        height: 20px;
+    }
+
+    .table .divider:after {
+        width: calc(100% - 40px);
+        height: 1px;
+        background: #CBBDC7;
+        margin-top: -10px;
+    }
+
+    .product-wrapper .table .title-wrapper {
+        background: #E1C9DB70;
+    }
+
+    .product-wrapper .table .title {
+        background: none;
+    }
+
+    .prices-wrapper {
+        margin-top: 0;
+        padding-top: 15px;
+        position: relative;
+    }
+
+    .table .prices {
+        width: calc(100% - 170px);
+        font-size: 14px;
+        background: none;
+        padding: 1px 10px;
+    }
+
+    .table .column button {
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+    }
+
+    .product-wrapper .table .title-wrapper:first-child {
+        padding-top: 10px;
+    }
+
+    .about-us-image {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .about-us-section {
+        margin-top: 0;
+        padding: 20px 20px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .footer .site-navigation img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .site-navigation {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer .site-navigation .menu {
+        font-size: 12px;
+        column-gap: 10px;
+        padding-top: 13px;
+    }
+
+    .footer .contacts {
+        width: 100%;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .footer .contacts span {
+        display: none;
+    }
+
+    .footer .divider {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        border-top-color: #CBBDC7;
+    }
+
+    .footer .follow-us {
+        justify-content: center;
+    }
+
+    .slider {
+        height: 350px;
+        position: relative;
+    }
+
+    .slider-content .title {
+        display: none;
+    }
+
+    .slider-content .description {
+        display: none;
+    }
+
+    .slider-content {
+        justify-content: center;
+        position: relative;
+    }
+
+    .slider-content .info-box-wrapper .divider {
+        display: none;
+    }
+
+    .slider-content .info-box-wrapper .info-box {
+        width: 200px;
+        margin: 0 calc((100vw - 200px) / 2);
+        background: #eeeeee;
+        border-radius: 50%;
+        row-gap: 10px;
+        height: 200px;
+    }
+
+    .slider-content .info-box-wrapper {
+        column-gap: 0;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        position: absolute;
+        animation: slideLeft 20s infinite;
+    }
+
+    .slider-content .info-box-wrapper .info-box .image-wrapper {
+        background: none;
+        height: 110px;
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .slider-content .info-box-wrapper .info-box .image-wrapper img {
+        height: 100px;
+    }
+
+    .slider-content .info-box-wrapper .info-box .info-description {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .slider:before {
+        content: '• • • •';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        font-size: 50px;
+        font-weight: 800;
+        color: #eeeeee;
+        letter-spacing: -4px;
+    }
+
+    .slider::after {
+        content: '•';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        animation: slideDotLeft 20s infinite;
+        z-index: 3;
+        font-size: 50px;
+        font-weight: 800;
+        color: #494949;
+        letter-spacing: -4px;
+    }
+
+    .menu-trigger {
+        display: flex;
+    }
+
+    .menu-trigger img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .menu-trigger img:hover {
+        filter: invert(0.4);
+    }
+
+    .header .contact-us {
+        display: none;
+    }
+
+    .content.with-drawer .drawer {
+        z-index: 100;
+        display: flex;
+        position: fixed;
+        height: calc(100vh - 100px);
+        width: 100%;
+        backdrop-filter: blur(5px);
+        top: 100px;
+        justify-content: flex-end;
+        background: #ffffff66;
+        visibility: visible;
+    }
+
+    .drawer-menu .menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 18px;
+    }
+
+    .drawer-menu .menu span {
+        cursor: pointer
+    }
+
+    .drawer-menu .menu span:hover {
+        text-decoration: underline;
+    }
+
+    .drawer-contact-us {
+        margin: auto 0 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #9e909a;
+    }
+
+    .drawer-contact-us img {
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .drawer-contact-us img:hover {
+        filter: invert(0.4);
+    }
+
+    .drawer-menu {
+        height: 100%;
+        width: 250px;
+        background: #e3cbdd;
+        box-shadow: -1px 1px 12px 1px #9b9a9a;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 260px;
+        transition: left .2s linear;
+    }
+
+    .with-drawer .drawer-menu {
+        left: 0;
+        transition: left .2s linear;
+    }
+
+    .table .column:hover .title {
+        font-weight: 500;
+    }
+
+    .table .column:hover .price {
+        font-weight: 500;
+    }
+
+    .table .column:hover .name {
+        font-weight: 500;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100vw;
+    }
+    45% {
+        left: -100vw;
+    }
+    50% {
+        left: -200vw;
+    }
+    70% {
+        left: -200vw;
+    }
+    75% {
+        left: -300vw;
+    }
+    95% {
+        left: -300vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slideDotLeft {
+    0% {
+        transform: translateX(calc(-50% - 38px));
+    }
+    20% {
+        transform: translateX(calc(-50% - 38px));
+    }
+    25% {
+        transform: translateX(calc(-50% - 13px));
+    }
+    45% {
+        transform: translateX(calc(-50% - 13px));
+    }
+    50% {
+        transform: translateX(calc(-50% + 13px));
+    }
+    70% {
+        transform: translateX(calc(-50% + 13px));
+    }
+    75% {
+        transform: translateX(calc(-50% + 38px));
+    }
+    95% {
+        transform: translateX(calc(-50% + 38px));
+    }
+    100% {
+        transform: translateX(calc(-50% - 38px));
+    }
+}
+
+

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sweet Dreams</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="styles-mobile.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;500&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+    <div class="header">
+        <img class="logo" src="assets/logo.svg">
+
+        <div class="title">Sweet Dreams</div>
+
+        <div class="menu">
+            <span onclick="scrollToSection('cake')">Торти</span>
+            <span onclick="scrollToSection('cupcake')">Капкейки</span>
+            <span onclick="scrollToSection('macaroni')">Макаронс</span>
+            <span onclick="scrollToSection('croissant')">Круасани</span>
+            <span onclick="scrollToSection('price')">Прайс</span>
+            <span onclick="scrollToSection('about-us')">Про нас</span>
+        </div>
+
+        <div class="contact-us">
+            <img src="assets/telegram.png">
+            <img src="assets/instagram.png">
+        </div>
+
+        <div class="menu-trigger">
+            <img src="assets/burger.png" onclick="toggleDrawer()">
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="drawer">
+            <div class="drawer-menu">
+                <div class="menu">
+                    <span onclick="scrollToSection('cake'); toggleDrawer()">Торти</span>
+                    <span onclick="scrollToSection('cupcake'); toggleDrawer()">Капкейки</span>
+                    <span onclick="scrollToSection('macaroni'); toggleDrawer()">Макаронс</span>
+                    <span onclick="scrollToSection('croissant'); toggleDrawer()">Круасани</span>
+                    <span onclick="scrollToSection('price'); toggleDrawer()">Прайс</span>
+                    <span onclick="scrollToSection('about-us'); toggleDrawer()">Про нас</span>
+                </div>
+
+                <div class="drawer-contact-us">
+                    <img src="assets/telegram.png">
+                    <img src="assets/instagram.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider-background">
+                <video src="assets/slider.MP4" autoplay loop muted></video>
+            </div>
+
+            <div class="slider-content">
+                <div class="title">КОНДИТЕРСЬКА SWEET DREAMS</div>
+
+                <div class="description">
+                    Ласкаво запрошуємо в наше кондитерське мистецтво, де кожен десерт — це казка, створена для того, щоб
+                    розкрити таємниці справжнього смаку. У нашому невеликому кулінарному світі відбувається справжнє
+                    визначення слова "солодкий"
+                </div>
+
+                <div class="info-box-wrapper">
+                    <div class="info-box">
+                        <div class="image-wrapper">
+                            <img src="assets/flour.png">
+                        </div>
+
+                        <div class="info-description"> Випікаємо з борошна вищого гатунку</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="info-box">
+                        <div class="image-wrapper">
+                            <img src="assets/cook.png">
+                        </div>
+
+                        <div class="info-description"> Тільки найкращі кондитери</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="info-box">
+                        <div class="image-wrapper">
+                            <img src="assets/car.png">
+                        </div>
+
+                        <div class="info-description"> Швидка доставка</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="info-box">
+                        <div class="image-wrapper">
+                            <img src="assets/love.png">
+                        </div>
+
+                        <div class="info-description"> Випікаємо з любов’ю</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="cake">
+            <div class="title">ТОРТИ</div>
+
+            <div class="product">
+                <img src="assets/cake.jpeg">
+
+                <div class="product-info">
+                    <div class="details">
+                        <div>
+                            <div class="detail-name">Види начинки</div>
+                            <div class="detail">Полуниця, Чорниця, Шоколад</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види коржа</div>
+                            <div class="detail">Бісквіт, Медовий, Шоколадний</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види крему</div>
+                            <div class="detail">Заварний, Фруктовий, Вершковий, Масляний</div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        Наші торти - це не просто десерти, це втілення вашого вишуканого смаку та
+                        розкоші. Вибір форм, текстур і ароматів - це завдання, яке ми виконуємо з особливою увагою до
+                        деталей, щоб створити для вас неповторний кулінарний шедевр.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="cupcake">
+            <div class="title">КАПКЕЙКИ</div>
+
+            <div class="product">
+                <img src="assets/cupcake.jpeg">
+
+                <div class="product-info">
+                    <div class="details">
+                        <div>
+                            <div class="detail-name">Види начинки</div>
+                            <div class="detail">Полуниця, Чорниця, Шоколад</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види тіста</div>
+                            <div class="detail">Медове, Шоколадне</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види крему</div>
+                            <div class="detail">Заварний, Фруктовий, Вершковий, Масляний</div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        Кожен капкейк - це невеликий кулінарний шедевр, де м'якість та ніжність
+                        тіста поєднуються зі сміливими смаковими експериментами. Наша команда використовує тільки
+                        найкращі продукти, щоб кожен капкейки приносив вам радість та задоволення.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="macaroni">
+            <div class="title">МАКАРОНС</div>
+
+            <div class="product">
+                <img src="assets/macaroni.jpeg">
+
+                <div class="product-info">
+                    <div class="details">
+                        <div>
+                            <div class="detail-name">Види начинки</div>
+                            <div class="detail">Полуниця, Чорниця, Шоколад</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види тіста</div>
+                            <div class="detail">Медове, Шоколадне</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види крему</div>
+                            <div class="detail">Заварний, Фруктовий, Вершковий, Масляний</div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        Кожен макаронс - це маленький шедевр, виготовлений з великою увагою до деталей. Ніжна оболонка
+                        зовні і неповторна м'якість всередині створюють ідеальний баланс текстур. Наші кулінарі віддані
+                        використанню тільки найкращих інгредієнтів.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="croissant">
+            <div class="title">КРУАСАНИ</div>
+
+            <div class="product">
+                <img src="assets/croissant.jpeg">
+
+                <div class="product-info">
+                    <div class="details">
+                        <div>
+                            <div class="detail-name">Види начинки</div>
+                            <div class="detail">Полуниця, Чорниця, Шоколад</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види тіста</div>
+                            <div class="detail">Медове, Шоколадне</div>
+                        </div>
+
+                        <div>
+                            <div class="detail-name">Види крему</div>
+                            <div class="detail">Заварний, Фруктовий, Вершковий, Масляний</div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        Наші круасани - це витвір вміння та творчості, приготований із застосуванням тільки найвищої
+                        якості інгредієнтів. Кожен круасан - це поєднання хрусткості, легкості та неповторного аромату.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="price">
+            <div class="title">ПРАЙС</div>
+
+            <div class="table-top-divider"></div>
+
+            <div class="table">
+                <div class="column">
+                    <div class="title-wrapper">
+                        <div class="title">ТОРТИ</div>
+                    </div>
+
+                    <div class="prices-wrapper">
+                        <div class="prices">
+                            <span class="name">Маленький</span>
+                            <span class="price">630 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">Середній</span>
+                            <span class="price">980 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">Великий</span>
+                            <span class="price">1400 ₴</span>
+                        </div>
+
+                        <button onclick="toggleCakeModal()">ЗАМОВИТИ</button>
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <div class="title-wrapper">
+                        <div class="title">КАПКЕЙКИ</div>
+                    </div>
+
+                    <div class="prices-wrapper">
+                        <div class="prices">
+                            <span class="name">6 штук</span>
+                            <span class="price">350 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">12 штук</span>
+                            <span class="price">650 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">24 штук</span>
+                            <span class="price">950 ₴</span>
+                        </div>
+
+                        <button onclick="toggleOrderModal('cupcake')">ЗАМОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <div class="title-wrapper">
+                        <div class="title">МАКАРОНС</div>
+                    </div>
+
+                    <div class="prices-wrapper">
+                        <div class="prices">
+                            <span class="name">6 штук</span>
+                            <span class="price">480 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">12 штук</span>
+                            <span class="price">880 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">24 штук</span>
+                            <span class="price">1280 ₴</span>
+                        </div>
+
+                        <button onclick="toggleOrderModal('macaroni')">ЗАМОВИТИ</button>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="column">
+                    <div class="title-wrapper">
+                        <div class="title">КРУАСАНИ</div>
+                    </div>
+
+                    <div class="prices-wrapper">
+                        <div class="prices">
+                            <span class="name">6 штук</span>
+                            <span class="price">300 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">12 штук</span>
+                            <span class="price">600 ₴</span>
+                        </div>
+
+                        <div class="prices">
+                            <span class="name">24 штук</span>
+                            <span class="price">1150 ₴</span>
+                        </div>
+
+                        <button onclick="toggleOrderModal('croissant')">ЗАМОВИТИ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-wrapper" id="about-us">
+            <div class="title">ПРО НАС</div>
+
+            <img class="about-us-image" src="assets/about-us-image.png">
+
+            <div class="about-us-section">
+                Вже два роки ми розкриваємо для вас двері до світу справжньої кондитерської
+                казки – місця, де аромат свіжозапечених виробів та неперевершений смак поєднуються, створюючи
+                найсолодший досвід для ваших смакових рецепторів. За ці два роки ми росли разом з вами, ділитися сміхом
+                на святкових столах, вражати вас неймовірними смаками та ставати частиною ваших особливих моментів.
+                Кожен торт, кекс, макарон чи круасан - це не лише страва, це історія, яку ми пишаємося розповідати разом
+                із вами.
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="site-navigation">
+                <img src="assets/logo.svg">
+
+                <div class="menu">
+                    <span onclick="scrollToSection('cake')">ТОРТИ</span>
+                    <span onclick="scrollToSection('cupcake')">КАПКЕЙКИ</span>
+                    <span onclick="scrollToSection('macaroni')">МАКАРОНС</span>
+                    <span onclick="scrollToSection('croissant')">КРУАСАНИ</span>
+                </div>
+
+                <div class="contacts">
+                    <span>КОНТАКТИ</span>
+
+                    <a href="mailto:sweetdreams@gmail.com">sweetdreams@gmail.com</a>
+                    <div>+38 (063) 198 0611</div>
+                    <div>м. Львів (Скорини 20)</div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="follow-us">
+                Слідкуйте за нами:
+                <img src="assets/telegram.png">
+                <img src="assets/instagram.png">
+                <img src="assets/facebook.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="cake-order-modal" class="cake-order-modal">
+        <div class="modal">
+            <div class="modal-header">Замовити торт</div>
+
+            <form>
+                <div class="form-control">
+                    <label for="cake-name">ПІБ:</label>
+                    <input type="text" id="cake-name" name="fname" placeholder="ПІБ">
+                </div>
+
+                <div class="form-control">
+                    <label for="cake-email">Email:</label>
+                    <input type="text" id="cake-email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-control">
+                    <label for="cake-filling">Види начинки:</label>
+
+                    <select name="filling" id="cake-filling">
+                        <option value="Полуниця">Полуниця</option>
+                        <option value="Чорниця">Чорниця</option>
+                        <option value="Шоколад">Шоколад</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="cake-input">Види коржа:</label>
+
+                    <select name="cake-input" id="cake-input">
+                        <option value="Бісквіт">Бісквіт</option>
+                        <option value="Медовий">Медовий</option>
+                        <option value="Шоколадний">Шоколадний</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="cake-cream">Види крему:</label>
+
+                    <select name="cream" id="cake-cream">
+                        <option value="Заварний">Заварний</option>
+                        <option value="Фруктовий">Фруктовий</option>
+                        <option value="Вершковий">Вершковий</option>
+                        <option value="Масляний">Масляний</option>
+                    </select>
+                </div>
+
+                <div class="form-control radio-control">
+                    <label>Розмір:</label>
+
+                    <span class="radio-group">
+                        <span class="radio">
+                            <input type="radio" id="small" name="count" value="small" checked>
+                            <label for="small">Маленький - 630 ₴</label>
+                        </span>
+
+                        <span class="radio">
+                            <input type="radio" id="medium" name="count" value="medium">
+                            <label for="medium">Середній - 980 ₴</label>
+                        </span>
+
+                        <span class="radio">
+                            <input type="radio" id="big" name="count" value="big">
+                            <label for="big">Великий - 1400 ₴</label>
+                        </span>
+                    </span>
+                </div>
+            </form>
+
+            <div class="action-button">
+                <button class="cancel-button" onclick="toggleCakeModal()">СКАСУВАТИ</button>
+                <button class="submit-button" onclick="confirmCakeOrder()">ПІДВТЕРДИТИ</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-modal" class="order-modal">
+        <div class="modal">
+            <div class="modal-header">Замовити <span id="modal-title-placeholder"></span></div>
+
+            <form>
+                <div class="form-control">
+                    <label for="order-name">ПІБ:</label>
+                    <input type="text" id="order-name" name="fname" placeholder="ПІБ">
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-control">
+                    <label for="filling">Види начинки:</label>
+
+                    <select name="filling" id="filling">
+                        <option value="Полуниця">Полуниця</option>
+                        <option value="Чорниця">Чорниця</option>
+                        <option value="Шоколад">Шоколад</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="dough">Види тіста:</label>
+
+                    <select name="dough" id="dough">
+                        <option value="Медове">Медове</option>
+                        <option value="Шоколадне">Шоколадне</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="cream">Види крему:</label>
+
+                    <select name="cream" id="cream">
+                        <option value="Заварний">Заварний</option>
+                        <option value="Фруктовий">Фруктовий</option>
+                        <option value="Вершковий">Вершковий</option>
+                        <option value="Масляний">Масляний</option>
+                    </select>
+                </div>
+
+                <div class="form-control radio-control">
+                    <label>Кількість:</label>
+
+                    <span class="radio-group">
+                        <span class="radio">
+                            <input type="radio" id="6" name="count" value="6" checked>
+                            <label for="6">6 шт. - <span id="6-placeholder"></span> ₴</label>
+                        </span>
+
+                        <span class="radio">
+                            <input type="radio" id="12" name="count" value="12">
+                            <label for="12">12 шт. - <span id="12-placeholder"></span> ₴</label>
+                        </span>
+
+                        <span class="radio">
+                            <input type="radio" id="24" name="count" value="24">
+                            <label for="24">24 шт. - <span id="24-placeholder"></span> ₴</label>
+                        </span>
+                    </span>
+                </div>
+            </form>
+
+            <div class="action-button">
+                <button class="cancel-button" onclick="toggleOrderModal()">СКАСУВАТИ</button>
+                <button class="submit-button" onclick="confirmOrder()">ПІДВТЕРДИТИ</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    const openDrawerClass = 'with-drawer';
+    const openedModalClass = 'shown';
+    const productPrices = {
+        cupcake: {
+            name: 'Капкейки',
+            price: {
+                [6]: 350,
+                [12]: 650,
+                [24]: 950
+            }
+        },
+        macaroni: {
+            name: 'Макаронс',
+            price: {
+                [6]: 480,
+                [12]: 880,
+                [24]: 1280
+            }
+        },
+        croissant: {
+            name: 'Круасани',
+            price: {
+                [6]: 300,
+                [12]: 600,
+                [24]: 1150
+            }
+        }
+    }
+
+    let openedOrderModal;
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({block: 'center', behavior: 'smooth'});
+    }
+
+    function toggleDrawer() {
+        const content = document.getElementById('content');
+        toggleElementClass(content, openDrawerClass);
+    }
+
+    function toggleOrderModal(product = openedOrderModal) {
+        const modal = document.getElementById('order-modal');
+        toggleElementClass(modal, openedModalClass);
+
+
+        if (modal.classList.contains(openedModalClass)) {
+            openedOrderModal = product;
+        }
+
+        document.getElementById('modal-title-placeholder').innerText = productPrices[product].name.toLowerCase();
+        document.getElementById('6-placeholder').innerText = productPrices[product].price[6];
+        document.getElementById('12-placeholder').innerText = productPrices[product].price[12];
+        document.getElementById('24-placeholder').innerText = productPrices[product].price[24];
+
+        document.getElementById('order-name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('filling').value = 'Полуниця';
+        document.getElementById('dough').value = 'Медове';
+        document.getElementById('cream').value = 'Заварний';
+
+        document.getElementById('6').checked = true;
+        document.getElementById('12').checked = false;
+        document.getElementById('24').checked = false;
+    }
+
+    function toggleCakeModal() {
+        const modal = document.getElementById('cake-order-modal');
+        toggleElementClass(modal, openedModalClass);
+
+        document.getElementById('cake-name').value = '';
+        document.getElementById('cake-email').value = '';
+        document.getElementById('cake-filling').value = 'Полуниця';
+        document.getElementById('cake-input').value = 'Бісквіт';
+        document.getElementById('cake-cream').value = 'Заварний';
+
+        document.getElementById('small').checked = true;
+        document.getElementById('medium').checked = false;
+        document.getElementById('big').checked = false;
+    }
+
+    function confirmCakeOrder() {
+        let orderText = 'Позиція: Торт\n';
+
+        orderText += 'ПІБ: ' + document.getElementById('cake-name').value + '\n';
+        orderText += 'Email: ' + document.getElementById('cake-email').value + '\n';
+        orderText += 'Начинка: ' + document.getElementById('cake-filling').value + '\n';
+        orderText += 'Корж: ' + document.getElementById('cake-input').value + '\n';
+        orderText += 'Крем: ' + document.getElementById('cake-cream').value + '\n';
+
+        let selectedSize, price;
+
+        if (document.getElementById('small').checked) {
+            selectedSize = 'Маленький';
+            price = 630;
+        } else if (document.getElementById('medium').checked) {
+            selectedSize = 'Середній';
+            price = 980;
+        } else {
+            selectedSize = 'Великий';
+            price = 1400;
+        }
+
+        orderText += 'Розмір: ' + selectedSize + '\n';
+        orderText += 'Ціна: ' + price + ' ₴';
+
+        alert(`Дякуємо за замовлення!\n\n${orderText}\n\nНа вашу електронну скриньку надійде лист з накладною та подальшими деталями щодо замовлення.`);
+        toggleCakeModal();
+    }
+
+    function confirmOrder() {
+        let orderText = `Позиція: ${productPrices[openedOrderModal].name}\n`;
+
+        orderText += 'ПІБ: ' + document.getElementById('order-name').value + '\n';
+        orderText += 'Email: ' + document.getElementById('email').value + '\n';
+        orderText += 'Начинка: ' + document.getElementById('filling').value + '\n';
+        orderText += 'Тісто: ' + document.getElementById('dough').value + '\n';
+        orderText += 'Крем: ' + document.getElementById('cream').value + '\n';
+
+        let selectedCount, price;
+
+        if (document.getElementById('6').checked) {
+            selectedCount = '6 шт.';
+            price = productPrices[openedOrderModal].price['6'];
+        } else if (document.getElementById('12').checked) {
+            selectedCount = '12 шт.';
+            price = productPrices[openedOrderModal].price['12'];
+        } else {
+            selectedCount = '24 шт.';
+            price = productPrices[openedOrderModal].price['24'];
+        }
+
+        orderText += 'Кількість: ' + selectedCount + '\n';
+        orderText += 'Ціна: ' + price + ' ₴';
+
+        alert(`Дякуємо за замовлення!\n\n${orderText}\n\nНа вашу електронну скриньку надійде лист з накладною та подальшими деталями щодо замовлення.`);
+        toggleOrderModal();
+    }
+
+    function toggleElementClass(element, className) {
+        if (element.classList.contains(className)) {
+            element.classList.remove(className);
+        } else {
+            element.classList.add(className);
+        }
+    }
+</script>
+</html>
